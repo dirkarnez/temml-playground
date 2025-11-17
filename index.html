@@ -8,7 +8,13 @@
     <body>
     <p id="here"></p>
     <script>
-      temml.render("c = \\pm\\sqrt{a^2 + b^2}", document.getElementById("here"), { displayMode: true });
+      temml.render(`\\def\\d{\\mathrm{d}}
+
+\\oint_C \\vec{B}\\circ \\d\\vec{l} = \\mu_0 \\left( I_{\\text{enc}} + \\varepsilon_0 \\frac{\\d}{\\d t} \\int_S {\\vec{E} \\circ \\hat{n}}\\; \\d a \\right)
+
+\\newline
+
+e^{i\\pi} + 1 = 0`, document.getElementById("here"), { displayMode: false /* true for single-line display */ });
     </script>
     </body>
     
